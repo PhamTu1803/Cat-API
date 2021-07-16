@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7B5B6D28-148E-4312-A33D-7527CB3CB7D8"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1990E0C-E32F-4CD1-BAC9-967C1B4E8ECC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cat-tableview/CatAPI/ViewModel/CatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "numberOfRowsInSection(section:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A25446FF-F117-4DB5-BC17-12ADD909CB45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cat-tableview/CatAPI/ViewModel/CatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "cellForRowAt(indexPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4890622B-6BF2-440C-B02C-1EA48018A8A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cat-tableview/CatAPI/ViewModel/CatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "requestRepositories(loadMore:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4890622B-6BF2-440C-B02C-1EA48018A8A9 - f738fe81466fab76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cat_tableview.CatViewModel.requestRepositories(loadMore: Swift.Bool) -&gt; ()"
+                  moduleName = "Cat-tableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amaterasu/Documents/Cat-tableview/Cat-tableview/CatAPI/ViewModel/CatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "4890622B-6BF2-440C-B02C-1EA48018A8A9 - 982736e444a83c8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Cat_tableview.CatResponse, QNetwork.BaseError&gt;) -&gt; () in Cat_tableview.CatViewModel.requestRepositories(loadMore: Swift.Bool) -&gt; ()"
+                  moduleName = "Cat-tableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amaterasu/Documents/Cat-tableview/Cat-tableview/CatAPI/ViewModel/CatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
