@@ -17,5 +17,7 @@ target 'Cat-tableview' do
   end
 pod 'Moya', '~> 14.0'
 pod  'Kingfisher' ,  '~> 5.0'
+pod 'SwiftLint'
+pod 'RealmSwift'
 
 end

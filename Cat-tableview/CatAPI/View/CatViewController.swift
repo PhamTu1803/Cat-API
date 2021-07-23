@@ -11,10 +11,10 @@ import QNetwork
 class CatViewController: UIViewController {
     
     private var viewModel: CatViewModel!
-    //MARK: - IBoutlet
+// MARK:- IBoutlet
     @IBOutlet weak var catTbview: UITableView!
     @IBOutlet weak var bottomindicator: UIActivityIndicatorView!
-    //MARK: - Lyfecycle
+// MARK:- Lyfecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bindViewModel()
@@ -26,7 +26,6 @@ class CatViewController: UIViewController {
         catTbview.delegate = self
         catTbview.dataSource = self
         catTbview.tableFooterView = UIView()
-
         // Hide indicator
         self.bottomindicator.isHidden = true
     }
@@ -36,7 +35,6 @@ class CatViewController: UIViewController {
         viewModel.needReloadTableView = { [weak self] in
             self?.catTbview.reloadData()
         }
-        
         viewModel.needShowError = { [weak self] error in
             self?.showError(error: error)
         }
@@ -50,10 +48,8 @@ class CatViewController: UIViewController {
             }
 
         }
-        
         // Request API here
         viewModel.requestRepositories()
-        self.bottomindicator.isHidden = true
     }
     /// - Parameter error: error from server
     private func showError(error: BaseError) {
@@ -62,12 +58,11 @@ class CatViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 }
-    //MARK: - Extention
-extension CatViewController : UITableViewDelegate , UITableViewDataSource {
+// MARK:- Extention
+extension CatViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfRowsInSection(section: section)
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CatTableViewCell") as! CatTableViewCell
         cell.nameCat.text = "Hoang thuong : " + String("\( indexPath.row + 1)")

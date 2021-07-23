@@ -9,17 +9,13 @@ import UIKit
 import Kingfisher
 
 class DetailCatViewController: UIViewController {
-    
-    var image : String = ""
-    
+    var image: String = ""
     @IBOutlet weak var catImg: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let url = URL(string: image ?? ""){
             let processor = DownsamplingImageProcessor(size: catImg.bounds.size)
                 |> RoundCornerImageProcessor(cornerRadius: 20)
-            
             catImg.kf.indicatorType = .activity
             catImg.kf.setImage(
                 with: url,
@@ -33,16 +29,12 @@ class DetailCatViewController: UIViewController {
         }
         
     }
-
-    //MARK: - BindData
+    // MARK: - BindData
     public func bindData(character: CatResponse) {
         if let url = character.url {
             self.image = url
-            
         }
-        
     }
-
 }
 
 extension UIViewController {

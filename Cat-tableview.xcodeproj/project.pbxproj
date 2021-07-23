@@ -22,12 +22,15 @@
 		EE6C6E9526A017FD0045FC08 /* CatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C6E9426A017FD0045FC08 /* CatAPI.swift */; };
 		EE6C6EA226A018F10045FC08 /* CatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C6EA126A018F10045FC08 /* CatService.swift */; };
 		EE6C6EA726A0193D0045FC08 /* CatResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C6EA626A0193D0045FC08 /* CatResponse.swift */; };
-		EE6C6EAC26A01A730045FC08 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C6EAB26A01A730045FC08 /* CatViewModel.swift */; };
 		EE6C6EB826A01C8A0045FC08 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C6EB726A01C8A0045FC08 /* CatViewController.swift */; };
 		EE6C6EBE26A01CED0045FC08 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C6EBC26A01CED0045FC08 /* CatTableViewCell.swift */; };
 		EE6C6EBF26A01CED0045FC08 /* CatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE6C6EBD26A01CED0045FC08 /* CatTableViewCell.xib */; };
+		EE7D316B26A5133600DDAC5C /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = EE7D316A26A5133600DDAC5C /* response.json */; };
 		EE975E1226A18A8000AED898 /* DetailCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975E1026A18A8000AED898 /* DetailCatViewController.swift */; };
 		EE975E1326A18A8000AED898 /* DetailCatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE975E1126A18A8000AED898 /* DetailCatViewController.xib */; };
+		EE9FDDAE26A95F6F00EAC2BD /* RealmCatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9FDDAD26A95F6F00EAC2BD /* RealmCatService.swift */; };
+		EE9FDDB326A95F7F00EAC2BD /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9FDDB226A95F7F00EAC2BD /* RealmManager.swift */; };
+		EE9FDDBB26A9790E00EAC2BD /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9FDDBA26A9790E00EAC2BD /* CatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,12 +75,15 @@
 		EE6C6E9426A017FD0045FC08 /* CatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPI.swift; sourceTree = "<group>"; };
 		EE6C6EA126A018F10045FC08 /* CatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatService.swift; sourceTree = "<group>"; };
 		EE6C6EA626A0193D0045FC08 /* CatResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatResponse.swift; sourceTree = "<group>"; };
-		EE6C6EAB26A01A730045FC08 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
 		EE6C6EB726A01C8A0045FC08 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
 		EE6C6EBC26A01CED0045FC08 /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
 		EE6C6EBD26A01CED0045FC08 /* CatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatTableViewCell.xib; sourceTree = "<group>"; };
+		EE7D316A26A5133600DDAC5C /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = response.json; path = ../../../response.json; sourceTree = "<group>"; };
 		EE975E1026A18A8000AED898 /* DetailCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCatViewController.swift; sourceTree = "<group>"; };
 		EE975E1126A18A8000AED898 /* DetailCatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCatViewController.xib; sourceTree = "<group>"; };
+		EE9FDDAD26A95F6F00EAC2BD /* RealmCatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCatService.swift; sourceTree = "<group>"; };
+		EE9FDDB226A95F7F00EAC2BD /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		EE9FDDBA26A9790E00EAC2BD /* CatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatViewModel.swift; path = ../../../../../.Trash/CatViewModel.swift; sourceTree = "<group>"; };
 		F09AE9578D4D087E0C17FFA9 /* Pods-Cat-tableview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat-tableview.debug.xcconfig"; path = "Target Support Files/Pods-Cat-tableview/Pods-Cat-tableview.debug.xcconfig"; sourceTree = "<group>"; };
 		F344300B351649B25692179D /* Pods_Cat_tableview_Cat_tableviewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cat_tableview_Cat_tableviewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +165,8 @@
 		EE6C6E2D269FF6780045FC08 /* Cat-tableview */ = {
 			isa = PBXGroup;
 			children = (
+				EE9FDD9B26A95EFC00EAC2BD /* RealmManager */,
+				EE7D316926A5130F00DDAC5C /* Tesresponse */,
 				EE975E0F26A18A5E00AED898 /* DetailCatViewController */,
 				EE6C6E9C26A018900045FC08 /* CatAPI */,
 				EE6C6E9326A017DF0045FC08 /* APIs */,
@@ -221,7 +229,7 @@
 		EE6C6E9E26A018C10045FC08 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				EE6C6EAB26A01A730045FC08 /* CatViewModel.swift */,
+				EE9FDDBA26A9790E00EAC2BD /* CatViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -252,6 +260,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		EE7D316926A5130F00DDAC5C /* Tesresponse */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D316A26A5133600DDAC5C /* response.json */,
+			);
+			path = Tesresponse;
+			sourceTree = "<group>";
+		};
 		EE975E0F26A18A5E00AED898 /* DetailCatViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +275,31 @@
 				EE975E1126A18A8000AED898 /* DetailCatViewController.xib */,
 			);
 			path = DetailCatViewController;
+			sourceTree = "<group>";
+		};
+		EE9FDD9B26A95EFC00EAC2BD /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE9FDDA626A95F2400EAC2BD /* Base */,
+				EE9FDDA226A95F1000EAC2BD /* Services */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		EE9FDDA226A95F1000EAC2BD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE9FDDAD26A95F6F00EAC2BD /* RealmCatService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EE9FDDA626A95F2400EAC2BD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EE9FDDB226A95F7F00EAC2BD /* RealmManager.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +420,7 @@
 				EE6C6EBF26A01CED0045FC08 /* CatTableViewCell.xib in Resources */,
 				EE6C6E3B269FF67A0045FC08 /* LaunchScreen.storyboard in Resources */,
 				EE6C6E38269FF67A0045FC08 /* Assets.xcassets in Resources */,
+				EE7D316B26A5133600DDAC5C /* response.json in Resources */,
 				EE6C6E36269FF6780045FC08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +554,9 @@
 				EE975E1226A18A8000AED898 /* DetailCatViewController.swift in Sources */,
 				EE6C6EB826A01C8A0045FC08 /* CatViewController.swift in Sources */,
 				EE6C6E33269FF6780045FC08 /* ViewController.swift in Sources */,
-				EE6C6EAC26A01A730045FC08 /* CatViewModel.swift in Sources */,
+				EE9FDDBB26A9790E00EAC2BD /* CatViewModel.swift in Sources */,
+				EE9FDDB326A95F7F00EAC2BD /* RealmManager.swift in Sources */,
+				EE9FDDAE26A95F6F00EAC2BD /* RealmCatService.swift in Sources */,
 				EE6C6EA226A018F10045FC08 /* CatService.swift in Sources */,
 				EE6C6EA726A0193D0045FC08 /* CatResponse.swift in Sources */,
 				EE6C6E2F269FF6780045FC08 /* AppDelegate.swift in Sources */,

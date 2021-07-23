@@ -9,8 +9,8 @@ import Foundation
 import QNetwork
 
 class CatService: QBaseService {
-    func searchRepositories( items: Int, completion: @escaping (Result<CatResponse, BaseError>) -> Void) {
-        provider.request(MultiTarget(CatAPI.searchRepositories( items : items)), type: CatResponse.self) { result in
+    func searchRepositories( completion: @escaping (Result<CatResponse, BaseError>) -> Void) {
+        provider.request(MultiTarget(CatAPI.searchRepositories) , type: CatResponse.self) { result in
             completion(result)
         }
     }

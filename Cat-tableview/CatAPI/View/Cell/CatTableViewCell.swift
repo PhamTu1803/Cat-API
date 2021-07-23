@@ -11,9 +11,7 @@ import Kingfisher
 class CatTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameCat: UILabel!
-    
     @IBOutlet weak var img: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,7 +26,6 @@ class CatTableViewCell: UITableViewCell {
         if let url = URL(string: data.url ?? ""){
             let processor = DownsamplingImageProcessor(size: img.bounds.size)
                 |> RoundCornerImageProcessor(cornerRadius: 20)
-
             img.kf.indicatorType = .activity
             img.kf.setImage(
                 with: url,
