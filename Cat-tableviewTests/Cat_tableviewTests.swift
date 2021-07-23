@@ -10,7 +10,7 @@ import XCTest
 
 class CattableviewTests: XCTestCase {
     let service = CatService()
-    private var viewModel = CatViewModel()
+    private var viewModel = CatViewModel(isTest: true)
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -28,21 +28,15 @@ class CattableviewTests: XCTestCase {
     }
     
     func testGetApi() throws {
-        let section = 1
-        /*
-         case 1 : test call api
-         */
-//        // Arrange
-//        let controller = CatViewController()
-//        // Act
-//        controller.viewDidLoad()
-//        let userCount = controller.catTbview.numberOfSections
-//
-//        // Assert
-//        XCTAssertTrue(userCount == 1 , "User count is incorrect!")
                 var catItem: [CatResponse] = []
-                catItem.append(CatResponse.init(id: 1, url: "https://i.thatcopy.pw/cat/3UJTX32.jpg", webpurl: "https://i.thatcopy.pw/cat-webp/3UJTX32.webp"))
-                XCTAssert(viewModel.numberOfRowsInSection(section: section ) == 0)
+                catItem.append(CatResponse.init())
+                viewModel.requestRepositories()
+        let expectation = self.expectation(description: "testTrue")
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(600)) { [self] in
+            XCTAssertTrue(viewModel.numberOfRowsInSection(section: 0 ) == 1)
+            expectation.fulfill()
+        }
+                
     }
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
